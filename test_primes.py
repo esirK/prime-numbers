@@ -1,5 +1,5 @@
 import unittest
-from primes import isPrime
+from primes import is_prime
 
 
 class TestPrimes(unittest.TestCase):
@@ -7,12 +7,12 @@ class TestPrimes(unittest.TestCase):
         # numbers
         numbers = [2, 5, 7, 11]
         for number in numbers:
-            self.assertTrue(isPrime(number))
+            self.assertTrue(is_prime(number))
 
     def test_num_not_prime(self):
         numbers = [1, -5, 6, 8]
         for number in numbers:
-            self.assertFalse(isPrime(number))
+            self.assertFalse(is_prime(number))
 
 
 if __name__ == "__main__":
